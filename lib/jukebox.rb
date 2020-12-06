@@ -33,5 +33,4 @@ def play(array)
   array.find do |track|
     (song_choice.to_i) - 1 == track.index
   end
-  end
 end
