@@ -30,4 +30,9 @@ end
 def play(array)
   puts "Please enter a song name or number:"
   song_choice = gets.strip
+  song_to_play = array.find do |track|
+    song_choice.to_i == track.(index + 1)
+    binding.pry
+  end
+  puts "Playing #{song_to_play}"
 end
