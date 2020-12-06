@@ -34,7 +34,6 @@ def play(array)
   song_to_play = array.find do |track|
     binding.pry
     song_choice.to_i == track.index + 1 || track.include?(song_choice)
-    binding.pry
   end
   if song_to_play
     puts "Playing #{song_to_play}"
