@@ -32,8 +32,6 @@ def play(array)
   song_choice = gets.strip
   if array.include?(song_choice)
     puts "Playing #{song_choice}"
-  elsif song_choice.to_i == array.index + 1
-    puts "Playing #{array[song_choice.to_i - 1]}"
   else
     puts "Invalid input, please try again"
   end
