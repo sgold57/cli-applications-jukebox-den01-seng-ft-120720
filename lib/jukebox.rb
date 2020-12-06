@@ -31,11 +31,10 @@ def play(array)
   puts "Please enter a song name or number:"
   song_choice = gets.strip
   if array.include?(song_choice)
-    binding.pry
     puts "Playing #{song_choice}"
   elsif song_choice.to_i <= array.length
     binding.pry
-    puts "Playing #{array[song_choice.to_i - 1]}"
+    puts "Playing #{array}"
   else
     puts "Invalid input, please try again"
   end
