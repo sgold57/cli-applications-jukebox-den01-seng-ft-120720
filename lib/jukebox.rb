@@ -56,5 +56,4 @@ def run(array)
       play
     end
   end
-  run(array)
 end
