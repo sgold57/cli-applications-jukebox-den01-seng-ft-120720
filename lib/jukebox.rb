@@ -36,7 +36,7 @@ def play(array)
     puts "Playing #{song_choice}"
   elsif song_choice_int <= array.length
     binding.pry
-    puts "Playing #{array}"
+    puts "Playing #{array[song_choice_int - 1]}"
   else
     binding.pry
     puts "Invalid input, please try again"
