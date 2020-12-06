@@ -32,8 +32,8 @@ def play(array)
   song_choice = gets.strip
   binding.pry
   array.find do |track|
-    if (song_choice.to_i) - 1 == track.index || track.include?(song_choice)
-      puts "Playing #{track[index]}"
+    if track.include?(song_choice)
+      puts "Playing #{track}"
     end
   end
 end
