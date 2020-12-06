@@ -33,7 +33,7 @@ def play(array)
   song_choice_int = song_choice.to_i
   if array.include?(song_choice)
     puts "Playing #{song_choice}"
-  elsif song_choice_int <= array.length
+  elsif song_choice_int <= array.length && song_choice_int != 0
     puts "Playing #{array[song_choice_int - 1]}"
   else
     puts "Invalid input, please try again"
