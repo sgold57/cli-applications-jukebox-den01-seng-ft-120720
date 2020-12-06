@@ -58,8 +58,3 @@ def run(array)
   end
   exit_jukebox
 end
-      
-      
-      
-      
-  
