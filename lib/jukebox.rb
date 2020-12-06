@@ -31,7 +31,7 @@ def play(array)
   puts "Please enter a song name or number:"
   song_choice = gets.strip
   array.find do |track|
-    song_choice.to_i == (track.index + 1) || track.include?(song_choice)
+    song_choice.to_i == (track.index + 1) or track.include?(song_choice)
     binding.pry
   end
 end
