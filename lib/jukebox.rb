@@ -30,11 +30,7 @@ end
 def play(array)
   puts "Please enter a song name or number:"
   song_choice = gets.strip
-  array.each do |track|
-    if song_choice.to_i == (track.index) + 1 || song_choice == track
-      puts "Playing #{track}"
-    else
-      puts "Invalid input, please try again"
-    end
+  if array.include?(song_choice)
+    puts "Playing #{song_choice}"
   end
 end
