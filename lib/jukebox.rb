@@ -34,9 +34,4 @@ def play(array)
     song_choice.to_i == (track.index + 1) || track.include?(song_choice)
     binding.pry
   end
-  if song_to_play
-    puts "Playing #{song_to_play}"
-  else
-    puts "Invalid input, please try again"
-  end
 end
