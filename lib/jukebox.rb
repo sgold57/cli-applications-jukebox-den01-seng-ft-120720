@@ -56,5 +56,5 @@ def run(array)
       play
     end
   end
-  exit_jukebox
+  run(array)
 end
